@@ -19,7 +19,7 @@
 - [常见问题](https://jichangduo.com/faq.html)：8 个问答，含 FAQPage 结构化数据。
 - [选购与使用指南](https://jichangduo.com/guides.html)：月成本、流量倍率、退款、隐私。
 - [资料来源与测评方法](https://jichangduo.com/methodology.html)：数据口径与测试记录要求。
-- [客户端资源](https://jichangduo.com/resources.html)：软件来源、订阅凭证保护、排错。
+- [客户端资源](https://jichangduo.com/resources.html)：按平台、内核、源码状态与获取费用筛选客户端，链接官方发布页，并说明下载和订阅凭证安全。
 - [风险提示](https://jichangduo.com/warnings.html)：风险自查清单与预付风险。
 - [关于本站](https://jichangduo.com/about.html)：站点声明、数据来源、推广披露、免责声明。
 - [联系方式与纠错](https://jichangduo.com/contact.html)：数据纠错与版权投诉渠道。
