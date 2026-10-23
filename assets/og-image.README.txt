@@ -1,0 +1,4 @@
+此目录包含全站社交分享预览图 og-image.png（1200 × 630）。
+
+如需重新生成，请在仓库根目录运行：
+python tools/make-og-image.py

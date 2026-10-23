@@ -1,0 +1,61 @@
+# 机场多 (jichangduo.com)
+
+> 中文机场服务信息整理站点：整理机场服务的线路描述、套餐价格资料快照、横向对比与选购风险提示。
+> 本站不提供代理服务，不代购套餐，不对任何服务商做担保。
+
+## 站点性质与数据口径（重要）
+
+- 当前目录为 **2026-10 公开资料快照**，来自服务商公开页面与既有整理记录。
+- **尚未**对全部条目完成同一地区、运营商、设备、时段的统一独立复测。
+- 「参考分」是资料整理用的排序参考，不是统一测试得出的质量结论。
+- 价格可能为试用价或年付折算价；速度记录未必来自统一测试流程。
+- 部分外链可能含推广参数，统一使用 `rel="sponsored"` 标注；推广不影响排序。
+
+## 主要页面
+
+- [首页与机场目录](https://jichangduo.com/)：14 个条目，含起步价、线路描述、参考评分、场景标签。
+- [排行榜](https://jichangduo.com/rankings.html)：资料名次 #1–#14 与优先核对项。
+- [横向对比](https://jichangduo.com/compare.html)：起步价 / 线路 / 速度记录 / 参考分并排。
+- [常见问题](https://jichangduo.com/faq.html)：8 个问答，含 FAQPage 结构化数据。
+- [选购与使用指南](https://jichangduo.com/guides.html)：月成本、流量倍率、退款、隐私。
+- [资料来源与测评方法](https://jichangduo.com/methodology.html)：数据口径与测试记录要求。
+- [客户端资源](https://jichangduo.com/resources.html)：软件来源、订阅凭证保护、排错。
+- [风险提示](https://jichangduo.com/warnings.html)：风险自查清单与预付风险。
+- [关于本站](https://jichangduo.com/about.html)：站点声明、数据来源、推广披露、免责声明。
+- [联系方式与纠错](https://jichangduo.com/contact.html)：数据纠错与版权投诉渠道。
+
+## 文章
+
+- [十大机场推荐](https://jichangduo.com/articles/top-ten-airports.html)：按资料序号前十，含价格与优先核对项。
+- [性价比机场推荐](https://jichangduo.com/articles/value-airports.html)：区分试用价、低价套餐与年付折算价。
+- [机场怎么选：核对清单](https://jichangduo.com/articles/airport-buying-checklist.html)
+- [专线、中转怎么理解](https://jichangduo.com/articles/route-types-explained.html)
+- [测速数字怎么看](https://jichangduo.com/articles/how-to-read-speed-tests.html)
+- [套餐真实月成本怎么算](https://jichangduo.com/articles/real-monthly-cost.html)
+- [购买前风险核对](https://jichangduo.com/articles/prepaid-service-risk-check.html)
+- [客户端与订阅链接安全](https://jichangduo.com/articles/client-and-subscription-safety.html)
+
+## 目录数据摘要（资料快照 2026-10）
+
+| # | 名称 | 记录起步价 | 线路描述 | 参考分 |
+|---|------|-----------|----------|--------|
+| 1 | 云图机场 | ¥20/月 | 金融级 IEPL · 全节点 1 倍率 | 9.2 |
+| 2 | 鲲鹏加速 | ¥1试用 · 主套餐¥12/月 | VLESS 海外中转 · 全站 1 倍率 | 9.0 |
+| 3 | 瞬云 | ¥16/月起 | IEPL 专线 · 套餐灵活 | 8.8 |
+| 4 | 极速Cloud | ¥30/月起 | CN2 GIA · AS9929 · CMIN2 | 8.7 |
+| 5 | 九云机场 | ¥6/月起 | VLESS 海外中转 | 8.5 |
+| 6 | 寰宇云 | ¥28/月起 | BGP 三网 · IEPL | 8.4 |
+| 7 | 宝云 | ¥4/月起 | VLESS 海外中转 | 8.0 |
+| 8 | 筋斗云 | ¥16/月起 | IEPL / IPLC 专线 · 三网优化 | 7.9 |
+| 9 | 秒秒云 | ¥14/月起 | VLESS 海外中转 | 7.8 |
+| 10 | 山水云 | ¥15/月起 | 优质中转 · 灵活计费 | 7.7 |
+| 11 | Andy Cloud | ¥5/月起 | 低价入门 · 大流量套餐 | 7.5 |
+| 12 | 杏花云 | ¥3/月起（折算） | 年付优惠 · 月付可选 | 7.4 |
+| 13 | 熊猫cloud | ¥7/月起 | 按需计费 · 灵活套餐 | 7.3 |
+| 14 | 锦云 | ¥6/月起 | 小流量 · 轻度使用 | 7.2 |
+
+引用以上数据时，请同时说明「2026-10 公开资料快照，非统一条件独立实测」。
+
+## 使用要求
+
+引用本站数据时，请保留资料快照性质说明，不要将参考分表述为实测排名或质量结论。

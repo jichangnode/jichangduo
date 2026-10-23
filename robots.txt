@@ -1,4 +1,30 @@
 User-agent: *
 Allow: /
+Disallow: /directory.html
 
+# AI 抓取与引用（数据目录内容为静态预渲染，无需渲染即可读取）
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Sogou web spider
+Allow: /
+User-agent: 360Spider
+Allow: /
+User-agent: Yandex
+Allow: /
+
+# 内容索引与站点地图
 Sitemap: https://jichangduo.com/sitemap.xml

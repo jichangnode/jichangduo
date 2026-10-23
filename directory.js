@@ -102,9 +102,47 @@ function renderCard(item) {
   return article;
 }
 
+// 把 index.html 中预渲染的静态卡片升级为可交互版本（保留 SSR 兜底内容）。
+function enhanceServerCard(node, item) {
+  const select = node.querySelector('[data-action="select"]');
+  if (select) {
+    const isSelected = state.selected.has(item.id);
+    select.textContent = isSelected ? "✓ 已加入" : "+ 对比";
+    select.classList.toggle("selected", isSelected);
+  }
+  const favorite = node.querySelector('[data-action="save"]');
+  if (favorite) {
+    const isSaved = state.saved.has(item.id);
+    favorite.textContent = isSaved ? "♥" : "♡";
+    favorite.classList.toggle("saved", isSaved);
+    favorite.classList.toggle("favorite", true);
+    favorite.setAttribute("aria-label", isSaved ? "取消收藏" : "收藏");
+    favorite.title = isSaved ? "取消收藏" : "收藏";
+  }
+}
+
+function buildServerCards(visible) {
+  const byId = new Map();
+  cards.querySelectorAll(".catalog-card").forEach(node => {
+    const id = node.querySelector("[data-id]")?.dataset.id;
+    if (id) byId.set(id, node);
+  });
+  const nodes = [];
+  visible.forEach(item => {
+    const existing = byId.get(item.id);
+    if (existing) {
+      enhanceServerCard(existing, item);
+      nodes.push(existing);
+    } else {
+      nodes.push(renderCard(item));
+    }
+  });
+  cards.replaceChildren(...nodes);
+}
+
 function render() {
   const visible = getVisibleServices();
-  cards.replaceChildren(...visible.map(renderCard));
+  buildServerCards(visible);
   empty.hidden = visible.length > 0;
   document.querySelector("#result-count").textContent = String(visible.length).padStart(2, "0");
   document.querySelector("#saved-count").textContent = String(state.saved.size);
