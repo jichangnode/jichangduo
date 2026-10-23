@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#eef3ef" />
+  <meta name="description" content="机场多整理机场线路、套餐价格与选购风险。浏览机场目录、参考榜单、横向对比和新手指南，多看几家再做选择。" />
+  <link rel="canonical" href="https://jichangduo.com/" />
+  <link rel="stylesheet" href="site.css" />
+  <title>机场多 - 机场推荐、线路对比与选购指南</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="index.html"><span class="brand-mark">多</span><span>机场多<small>JICHANGDUO</small></span></a>
+    <nav class="site-nav" aria-label="主导航">
+      <a class="current" href="index.html">首页</a>
+      <a href="rankings.html">排行榜</a>
+      <a href="articles/top-ten-airports.html">十大机场推荐</a>
+      <a href="articles/value-airports.html">性价比机场推荐</a>
+      <a href="compare.html">横向对比</a>
+      <a href="faq.html">常见问题</a>
+      <a href="blog.html">文章专题</a>
+      <a href="resources.html">客户端资源</a>
+      <a href="warnings.html">风险提示</a>
+    </nav>
+  </header>
+  <main class="page-shell">
+    <section class="home-hero">
+      <p class="eyebrow">机场推荐 · 线路观察 · 套餐指南</p>
+      <h1>多看几家，<span>再做选择。</span></h1>
+      <p class="lead">按预算、线路和使用场景整理机场服务信息。我们把目录、榜单、对比和选购知识拆成独立页面，方便你按需查阅；价格和表现以服务商当前信息为准。</p>
+      <div class="hero-actions"><a class="button primary" href="#directory">浏览机场目录</a><a class="button" href="compare.html">查看横向对比</a></div>
+      <div class="quick-links">
+        <a href="rankings.html"><span>01</span><strong>参考排行榜</strong><small>按现有资料快照整理</small></a>
+        <a href="blog.html#buying-guide"><span>02</span><strong>新手选购指南</strong><small>从预算和使用场景开始</small></a>
+        <a href="blog.html#methodology"><span>03</span><strong>测评方法说明</strong><small>了解数据来源和局限</small></a>
+      </div>
+    </section>
+    <aside class="notice"><strong>目录资料说明</strong><p>下方目录中的价格、评分与线路描述为公开资料快照，并非本站对所有服务的统一独立复测。套餐和服务状态可能变化，购买前请核对服务商当前条款。</p></aside>
+    <section class="catalog" id="directory" aria-label="机场目录筛选">
+      <header class="page-heading">
+        <p class="eyebrow">AIRPORT DIRECTORY / SEARCH & FILTER</p>
+        <h2 class="page-title">机场服务目录</h2>
+        <p class="page-lead">按名称、预算和线路标签筛选条目；可收藏服务并自选对比。</p>
+      </header>
+      <div class="catalog-toolbar">
+        <label class="catalog-search"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="搜索名称、线路或特点" autocomplete="off" /><kbd>/</kbd></label>
+        <label class="catalog-sort">排序
+          <select id="sort-select" aria-label="排序方式"><option value="rank">资料名次</option><option value="price">起步价从低到高</option><option value="score">参考分从高到低</option><option value="name">名称 A-Z</option></select>
+        </label>
+        <button class="catalog-view" id="saved-view" type="button" aria-pressed="false">♡ 我的收藏 <span id="saved-count">0</span></button>
+      </div>
+      <div class="catalog-filters" role="group" aria-label="按特点筛选">
+        <button class="filter active" type="button" data-filter="全部">全部 <span>14</span></button>
+        <button class="filter" type="button" data-filter="专线">IEPL / IPLC</button>
+        <button class="filter" type="button" data-filter="低价">低价入门</button>
+        <button class="filter" type="button" data-filter="解锁">流媒体 / AI</button>
+        <button class="filter" type="button" data-filter="试用">试用套餐</button>
+        <span class="catalog-note" id="list-note">公开资料快照 · 2026-10</span>
+      </div>
+      <div class="catalog-summary"><h2 id="list-heading">全部条目</h2><span><strong id="result-count">14</strong> 个结果</span></div>
+      <div class="catalog-cards" id="cards" aria-live="polite"></div>
+      <div class="catalog-empty" id="empty" hidden><h2>没有找到匹配的服务</h2><p>换个关键词或清除筛选条件再试试。</p><button class="button primary" id="reset" type="button">显示全部条目</button></div>
+    </section>
+    <section class="content-section">
+      <div class="section-heading"><p class="eyebrow">START WITH YOUR NEEDS</p><h2>先确定你要解决什么问题</h2><p>不确定从哪里开始？按目标进入对应内容，而不是在一页里反复滚动。</p></div>
+      <div class="tile-grid">
+        <a class="content-card" href="#directory"><span class="card-number">A / DIRECTORY</span><h3>查找服务条目</h3><p>搜索名称或线路，按价格、名次和资料评分筛选，并收藏感兴趣的条目。</p><span class="text-link">浏览上方目录 →</span></a>
+        <a class="content-card" href="compare.html"><span class="card-number">B / COMPARE</span><h3>比较套餐信息</h3><p>把现有价格、线路描述和公开记录放在一起看，并留意数据日期与条件。</p><span class="text-link">查看横向对比 →</span></a>
+        <a class="content-card" href="blog.html#buying-guide"><span class="card-number">C / LEARN</span><h3>补充选购常识</h3><p>了解如何看月成本、流量规则、线路名称、退款条款和隐私风险。</p><span class="text-link">前往文章专题 →</span></a>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="section-heading"><p class="eyebrow">MORE TO EXPLORE</p><h2>更多独立栏目</h2><p>文章专题、客户端入门和风险自查分别整理，后续可以按主题持续补充。</p></div>
+      <div class="tile-grid">
+        <a class="content-card" href="blog.html"><span class="card-number">D / ARTICLES</span><h3>文章与专题</h3><p>按选购、线路、测试和隐私主题浏览内容。</p><span class="text-link">打开文章专题 →</span></a>
+        <a class="content-card" href="resources.html"><span class="card-number">E / RESOURCES</span><h3>客户端资源</h3><p>了解可信软件来源、订阅凭证保护和基础排错。</p><span class="text-link">查看资源指南 →</span></a>
+        <a class="content-card" href="warnings.html"><span class="card-number">F / SAFETY</span><h3>风险提示</h3><p>按多方核验原则识别风险，不将单一传闻当作事实。</p><span class="text-link">阅读风险提示 →</span></a>
+      </div>
+    </section>
+    <aside class="notice"><strong>资料与商业说明</strong><p>目录中的价格、评分和线路标签是资料快照，并非本站对所有服务的独立复测。部分外链可能含推广参数；购买前请核对服务商官网的当前套餐、隐私条款、退款规则与适用法律法规。</p></aside>
+  </main>
+  <footer class="site-footer"><span>机场多 · 线路与套餐信息整理</span><nav aria-label="页脚导航"><a href="#directory">机场目录</a><a href="blog.html#methodology">文章专题</a><a href="faq.html">常见问题</a></nav></footer>
+  <aside class="catalog-compare-bar" id="compare-bar" hidden><div><strong id="compare-count">已选 0 项</strong><span>最多选择 3 项</span></div><div class="catalog-compare-actions"><button id="clear-compare" type="button">清空</button><button class="primary" id="open-compare" type="button">查看对比</button></div></aside>
+  <div class="catalog-toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog class="catalog-dialog" id="detail-dialog"><div class="dialog-head"><div><p>公开资料快照</p><h2 id="detail-title"></h2></div><button class="close" data-close type="button" aria-label="关闭">×</button></div><div class="dialog-content" id="detail-content"></div></dialog>
+  <dialog class="catalog-dialog" id="compare-dialog"><div class="dialog-head"><div><p>COMPARE / SIDE BY SIDE</p><h2>服务信息对比</h2></div><button class="close" data-close type="button" aria-label="关闭">×</button></div><div class="dialog-content" id="compare-content"></div></dialog>
+  <script src="directory.js" defer></script>
+</body>
+</html>
