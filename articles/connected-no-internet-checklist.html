@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="客户端显示已连接但网页打不开怎么办？按本地网络、配置订阅、代理模式、系统时间和服务状态逐步排查，并避免泄露订阅凭证。" />
+  <meta property="og:type" content="article" /><meta property="og:site_name" content="机场多DUO" /><meta property="og:locale" content="zh_CN" /><meta property="og:url" content="https://jichangduo.com/articles/connected-no-internet-checklist.html" /><meta property="og:title" content="客户端显示已连接但无法上网？按顺序排查" /><meta property="og:description" content="从本地网络到配置订阅逐步定位连接问题，附安全排查顺序。" /><meta property="og:image" content="https://jichangduo.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="客户端显示已连接但无法上网？按顺序排查" /><meta name="twitter:description" content="安全、低风险的逐步排查清单。" /><meta name="twitter:image" content="https://jichangduo.com/assets/og-image.png" />
+  <link rel="canonical" href="https://jichangduo.com/articles/connected-no-internet-checklist.html" /><link rel="stylesheet" href="../site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>客户端显示已连接但无法上网？按顺序排查 - 机场多DUO</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"客户端显示已连接但无法上网？按顺序排查","description":"从本地网络到配置订阅逐步定位连接问题，附安全排查顺序。","datePublished":"2026-10-24","dateModified":"2026-10-24","inLanguage":"zh-CN","author":{"@type":"Organization","name":"机场多DUO编辑部"},"publisher":{"@type":"Organization","name":"机场多DUO","url":"https://jichangduo.com/"},"mainEntityOfPage":"https://jichangduo.com/articles/connected-no-internet-checklist.html"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://jichangduo.com/"},{"@type":"ListItem","position":2,"name":"文章与专题","item":"https://jichangduo.com/blog.html"},{"@type":"ListItem","position":3,"name":"已连接但无法上网","item":"https://jichangduo.com/articles/connected-no-internet-checklist.html"}]}]}</script>
+</head>
+<body>
+  <header class="site-header"><a class="site-brand" href="../index.html"><span class="brand-mark">多</span><span>机场多DUO<small>JICHANGDUO</small></span></a><nav class="site-nav" aria-label="主导航"><a href="../index.html">首页</a><a href="../rankings.html">排行榜</a><a href="top-ten-airports.html">十大机场推荐</a><a href="value-airports.html">性价比机场推荐</a><a href="../compare.html">横向对比</a><a href="../faq.html">常见问题</a><a class="current" href="../blog.html">文章专题</a><a href="../resources.html">客户端资源</a><a href="../warnings.html">风险提示</a></nav></header>
+  <main class="article-shell">
+    <nav class="article-breadcrumb" aria-label="面包屑"><a href="../index.html">首页</a><span>›</span><a href="../blog.html">文章与专题</a><span>›</span><span>已连接但无法上网</span></nav>
+    <article>
+      <header class="article-header"><p class="eyebrow">TROUBLESHOOTING · 连接排查</p><h1>客户端显示已连接但无法上网？按顺序排查</h1><p class="article-deck">“已连接”通常只说明客户端启动了连接流程，不一定代表每个应用的流量都已正确转发。先从简单、可逆的检查开始，不要一上来重装软件或导入陌生配置。</p><div class="article-meta"><span>机场多DUO编辑部</span><time datetime="2026-10-24">更新于 2026-10-24</time><span>阅读约 5 分钟</span></div></header>
+      <div class="article-body">
+        <div class="article-callout"><strong>快速答案：</strong>先确认设备本身能上网，再更新服务配置并换一个节点测试，然后检查系统代理/VPN 权限、系统时间和服务状态。每次只改一个设置，方便确定问题在哪一步出现。</div>
+        <h2>第一步：确认不是设备网络故障</h2><p>暂时断开客户端，打开一个平时可访问的网站，确认 Wi-Fi 或移动网络可用。尝试切换 Wi-Fi/移动数据，或重新连接当前网络。若断开客户端后也无法访问，优先处理本地网络或设备问题。</p>
+        <h2>第二步：更新配置并换一个节点</h2><p>查看服务套餐是否到期、流量是否用尽，以及服务商是否发布维护通知。随后在客户端刷新订阅/配置，选择另一个可用节点测试。节点名称和地理标签不是可用性保证，具体状态以实际连接和服务方说明为准。</p>
+        <h2>第三步：检查代理模式与系统权限</h2><p>桌面客户端可能需要打开系统代理；移动端通常需要同意系统创建 VPN 配置。确认系统没有同时运行另一个代理或 VPN 应用，也检查浏览器是否设置了单独的代理。TUN、增强模式等功能会改变流量接管范围，排查时先使用服务方文档推荐的基础模式。</p>
+        <h2>第四步：检查时间、版本和配置兼容</h2><p>把设备日期和时间设为自动同步，检查客户端版本是否仍受支持，配置格式是否与该客户端兼容。不要因为网上某份配置“看起来能用”就导入；配置文件可能含账户凭证或脚本。客户端和订阅的安全说明见<a href="client-and-subscription-safety.html">客户端与订阅链接指南</a>。</p>
+        <h2>第五步：查看日志并向官方求助</h2><p>如果仍不能连接，记录发生时间、系统版本、客户端版本、选用节点、错误提示，以及更换网络后的结果。日志提交前检查并遮挡订阅 URL、令牌、账号、IP 等敏感信息。再通过服务商官方支持渠道询问；不要把密码或验证码发送给任何人。</p>
+        <h2>哪些做法先不要尝试</h2><ul><li>不要关闭系统防护、证书检查或防火墙来“试试看”。</li><li>不要运行陌生人发来的修复脚本、配置转换器或远程控制程序。</li><li>不要同时改 DNS、路由、TUN 和代理规则，否则难以定位原因。</li><li>不要公开完整订阅链接、配置文件或未脱敏日志。</li></ul>
+        <p>如果问题是测速结果波动而非完全无法连接，可参考<a href="how-to-read-speed-tests.html">测速数据怎么看</a>；购买前也应了解服务的售后和异常处理方式，参阅<a href="prepaid-service-risk-check.html">预付风险核对文章</a>。</p>
+      </div>
+      <nav class="article-links" aria-label="相关文章"><a href="client-and-subscription-safety.html">客户端与订阅凭证保护 →</a><a href="how-to-read-speed-tests.html">测速结果如何判断 →</a><a href="prepaid-service-risk-check.html">服务异常如何核实 →</a><a href="../resources.html">查看客户端目录 →</a></nav>
+    </article>
+    <a class="article-back" href="../blog.html">← 返回文章与专题</a>
+  </main>
+</body>
+</html>
