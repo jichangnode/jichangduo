@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="机场节点怎么选？了解地理位置、用途场景、延迟与负载的关系，以及如何测试和切换节点。" />
+  <link rel="canonical" href="https://jichangduo.com/articles/node-selection-strategy.html" /><link rel="stylesheet" href="../site.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>机场节点选择策略：按用途和网络环境筛选 - 机场多DUO</title>
+  <meta property="og:type" content="article" /><meta property="og:site_name" content="机场多DUO" /><meta property="og:locale" content="zh_CN" /><meta property="og:url" content="https://jichangduo.com/articles/node-selection-strategy.html" />
+  <meta property="og:title" content="机场节点选择策略：按用途和网络环境筛选" />
+  <meta property="og:description" content="了解节点地理位置、延迟、负载的影响，以及如何按日常浏览、流媒体、游戏等场景选择合适的节点。" />
+  <meta property="og:image" content="https://jichangduo.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="机场节点选择策略：按用途和网络环境筛选" />
+  <meta name="twitter:description" content="了解节点地理位置、延迟、负载的影响，以及如何按日常浏览、流媒体、游戏等场景选择合适的节点。" />
+  <meta name="twitter:image" content="https://jichangduo.com/assets/og-image.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"机场节点选择策略：按用途和网络环境筛选","description":"了解节点地理位置、延迟、负载的影响，以及如何按日常浏览、流媒体、游戏等场景选择合适的节点。","url":"https://jichangduo.com/articles/node-selection-strategy.html","inLanguage":"zh-CN","author":{"@type":"Organization","name":"机场多DUO"},"publisher":{"@id":"https://jichangduo.com/#organization"},"isPartOf":{"@id":"https://jichangduo.com/blog.html#blog"}}</script>
+</head>
+<body>
+  <header class="site-header"><a class="site-brand" href="../index.html"><span class="brand-mark">多</span><span>机场多DUO<small>JICHANGDUO</small></span></a><nav class="site-nav" aria-label="主导航"><a href="../index.html">首页</a><a href="../rankings.html">排行榜</a><a href="top-ten-airports.html">十大机场推荐</a><a href="value-airports.html">性价比机场推荐</a><a href="../compare.html">横向对比</a><a href="../faq.html">常见问题</a><a href="../blog.html">文章专题</a><a href="../resources.html">客户端资源</a><a href="../warnings.html">风险提示</a></nav></header>
+  <main class="page-shell">
+    <header class="page-heading"><p class="eyebrow">NODE SELECTION / STRATEGY</p><h1 class="page-title">机场节点选择策略</h1><p class="page-lead">节点太多不知道怎么选？按使用场景、地理位置、延迟指标和流量倍率综合判断，而不是只看节点名称。</p></header>
+
+    <section class="answer-block">
+      <h2>节点选择的核心原则</h2>
+      <p>选择机场节点时，重点考虑 <strong>用途场景</strong>（日常浏览 / 流媒体 / 游戏 / 下载）、<strong>地理位置</strong>（物理距离影响延迟）、<strong>线路质量</strong>（专线 vs 中转）和 <strong>负载状态</strong>（节点拥挤程度）。单看节点名称或地区标签往往不够准确。</p>
+
+      <h3>不同场景的节点需求</h3>
+      <ul>
+        <li><strong>日常浏览与办公</strong>：优先选择延迟低、稳定性高的节点，地理位置以亚洲（香港、日本、新加坡）为主。对带宽要求不高，但要求连接稳定。</li>
+        <li><strong>流媒体播放</strong>：需要较大带宽和良好的流媒体解锁能力。部分服务对节点 IP 所在地区有要求（如 Netflix 区域库、Disney+ 地区限制）。</li>
+        <li><strong>在线游戏</strong>：对延迟和丢包率极度敏感，优先选择物理距离近、线路优质的专线节点。推荐延迟 < 50ms，丢包率 < 1%。</li>
+        <li><strong>大文件下载</strong>：关注峰值带宽和流量倍率。部分高倍率节点（2× 或更高）会快速消耗套餐流量。</li>
+      </ul>
+    </section>
+
+    <section class="answer-block">
+      <h2>地理位置与延迟</h2>
+      <p>节点的物理位置直接影响网络延迟。从中国大陆访问时，推荐优先级为：</p>
+      <ol>
+        <li><strong>香港、台湾</strong>：距离最近，延迟通常 10-50ms，适合游戏和对延迟敏感的场景。</li>
+        <li><strong>日本、韩国、新加坡</strong>：延迟约 50-100ms，适合日常浏览和流媒体，流媒体资源丰富。</li>
+        <li><strong>美国西海岸</strong>：延迟约 120-180ms，适合访问美国服务或特定流媒体内容。</li>
+        <li><strong>欧洲节点</strong>：延迟通常 200ms 以上，仅在需要欧洲 IP 或特定服务时使用。</li>
+      </ol>
+
+      <aside class="notice"><strong>提示</strong><p>节点名称中的地区标签（如「香港 HK01」）通常指服务器所在地，但实际线路可能经过多次跳转。查看客户端显示的实际延迟更准确。</p></aside>
+    </section>
+
+    <section class="answer-block">
+      <h2>线路类型对节点质量的影响</h2>
+      <p>相同地理位置的节点，线路类型会显著影响实际体验：</p>
+      <dl>
+        <dt><strong>IEPL / IPLC 专线</strong></dt>
+        <dd>物理专线，延迟稳定，晚高峰不易拥堵，但价格较高。适合对稳定性要求高的场景。</dd>
+
+        <dt><strong>CN2 GIA</strong></dt>
+        <dd>电信优质线路，回国方向优化明显，适合电信用户。联通、移动用户体验可能不如专线。</dd>
+
+        <dt><strong>海外中转（如 VLESS）</strong></dt>
+        <dd>经过海外服务器中转，成本较低，但晚高峰可能出现拥堵。适合预算有限或轻度使用场景。</dd>
+
+        <dt><strong>直连 / 普通线路</strong></dt>
+        <dd>无特殊优化，依赖公网质量，晚高峰易受影响。仅适合非高峰时段或应急备用。</dd>
+      </dl>
+    </section>
+
+    <section class="answer-block">
+      <h2>节点负载与在线人数</h2>
+      <p>即使是优质节点，过多用户同时使用也会导致速度下降。部分客户端会显示节点负载或在线人数，选择时可参考：</p>
+      <ul>
+        <li>优先选择 <strong>负载 < 50%</strong> 的节点。</li>
+        <li>避开显示「拥挤」或在线人数异常多的节点。</li>
+        <li>晚高峰（19:00–23:00）时，热门节点（香港、日本）更容易拥堵，可尝试冷门地区节点。</li>
+      </ul>
+    </section>
+
+    <section class="answer-block">
+      <h2>流量倍率与节点成本</h2>
+      <p>部分机场对不同节点设置不同的流量倍率：</p>
+      <ul>
+        <li><strong>1× 倍率节点</strong>：使用 1GB 流量扣除 1GB，适合日常使用。</li>
+        <li><strong>高倍率节点（1.5×、2× 或更高）</strong>：通常是优质专线或流媒体解锁节点，流量消耗快，适合短期或特定任务使用。</li>
+        <li><strong>0.1× 或 0× 倍率节点</strong>：部分机场提供的「免流」或「测试」节点，几乎不消耗流量，但可能限速或不稳定。</li>
+      </ul>
+      <p>购买套餐前，务必了解各节点的倍率规则，避免高倍率节点快速耗尽流量。详见 <a href="traffic-multiplier-explained.html">流量倍率说明</a>。</p>
+    </section>
+
+    <section class="answer-block">
+      <h2>如何测试和切换节点</h2>
+      <h3>测试节点质量的方法</h3>
+      <ol>
+        <li><strong>客户端延迟测试</strong>：大多数客户端支持批量测试节点延迟，选择延迟较低且稳定的节点。</li>
+        <li><strong>实际访问测试</strong>：连接节点后打开常用网站或服务，观察加载速度和是否有卡顿。</li>
+        <li><strong>在线测速工具</strong>：使用 Speedtest、Fast.com 等工具测试当前节点的下载/上传速度。</li>
+        <li><strong>流媒体解锁测试</strong>：如果需要观看特定流媒体，可访问对应平台检查是否能正常播放。</li>
+      </ol>
+
+      <h3>节点切换建议</h3>
+      <ul>
+        <li>日常使用时，建议保存 <strong>2-3 个备用节点</strong>，以应对单个节点故障或拥堵。</li>
+        <li>不同时间段节点表现可能不同，可在晚高峰和非高峰时段分别测试。</li>
+        <li>部分客户端支持自动选择最优节点或负载均衡，但自动选择的结果未必适合你的具体需求。</li>
+      </ul>
+    </section>
+
+    <section class="answer-block">
+      <h2>节点名称常见标识</h2>
+      <p>机场通常会在节点名称中添加标识，帮助用户快速识别节点特点：</p>
+      <table>
+        <thead>
+          <tr><th>标识</th><th>含义</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>HK / JP / SG / US</td><td>地区代码</td><td>香港、日本、新加坡、美国等地理位置</td></tr>
+          <tr><td>IPLC / IEPL</td><td>专线类型</td><td>优质物理专线，稳定性高</td></tr>
+          <tr><td>x2 / x0.5</td><td>流量倍率</td><td>使用该节点时的流量扣除比例</td></tr>
+          <tr><td>Netflix / Disney+</td><td>流媒体解锁</td><td>标明该节点支持特定流媒体服务</td></tr>
+          <tr><td>Game / 游戏</td><td>游戏优化</td><td>针对游戏场景优化的低延迟节点</td></tr>
+          <tr><td>01 / 02 / 03</td><td>节点编号</td><td>同一地区的不同服务器，编号小的通常较热门</td></tr>
+        </tbody>
+      </table>
+      <p>但标识仅供参考，实际质量还需结合测试结果判断。</p>
+    </section>
+
+    <section class="panel">
+      <h2>节点选择常见误区</h2>
+      <ul>
+        <li><strong>只看地区不看线路</strong>：同为香港节点，专线和普通中转的体验差异巨大。</li>
+        <li><strong>一味追求低延迟</strong>：延迟只是指标之一，丢包率、带宽、稳定性同样重要。</li>
+        <li><strong>忽略流量倍率</strong>：使用高倍率节点看视频或下载大文件会快速消耗套餐流量。</li>
+        <li><strong>不做备用准备</strong>：单一节点故障或维护时，缺少备选方案会影响使用。</li>
+        <li><strong>迷信「高级」节点</strong>：部分机场的「高级」或「专属」节点可能只是营销标签，实际质量未必更好。</li>
+      </ul>
+    </section>
+
+    <aside class="notice"><strong>购买前确认</strong><p>不同机场的节点配置、倍率规则和地区覆盖差异很大。购买前建议先试用或查看服务商提供的节点列表，确认是否满足你的使用场景。</p></aside>
+
+    <section class="panel">
+      <h2>相关文章</h2>
+      <ul>
+        <li><a href="route-types-explained.html">专线、中转怎么理解</a> - 了解不同线路类型的原理</li>
+        <li><a href="how-to-read-speed-tests.html">测速数字怎么看</a> - 掌握测速结果的正确解读方法</li>
+        <li><a href="traffic-multiplier-explained.html">流量倍率说明</a> - 理解倍率对套餐流量的影响</li>
+        <li><a href="airport-buying-checklist.html">机场购买核对清单</a> - 全面评估套餐是否适合</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer"><span>机场多DUO · 节点选择策略</span><nav aria-label="页脚导航"><a href="../index.html">首页</a><a href="../blog.html">文章专题</a><a href="../faq.html">常见问题</a></nav></footer>
+</body>
+</html>

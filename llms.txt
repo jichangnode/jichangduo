@@ -22,7 +22,7 @@
 - [客户端资源](https://jichangduo.com/resources.html)：按平台、内核、源码状态与获取费用筛选客户端，链接官方发布页，并说明下载和订阅凭证安全。
 - [风险提示](https://jichangduo.com/warnings.html)：风险自查清单与预付风险。
 - [关于本站](https://jichangduo.com/about.html)：站点声明、数据来源、推广披露、免责声明。
-- [联系方式与纠错](https://jichangduo.com/contact.html)：数据纠错与版权投诉渠道。
+- [联系方式与纠错](https://jichangduo.com/contact.html)：Telegram @outsideweb 与 GitHub Issues，可提交数据纠错与版权投诉。
 
 ## 文章
 
@@ -34,6 +34,10 @@
 - [套餐真实月成本怎么算](https://jichangduo.com/articles/real-monthly-cost.html)
 - [购买前风险核对](https://jichangduo.com/articles/prepaid-service-risk-check.html)
 - [客户端与订阅链接安全](https://jichangduo.com/articles/client-and-subscription-safety.html)
+- [机场节点选择策略](https://jichangduo.com/articles/node-selection-strategy.html)：按用途、地理位置、延迟和倍率选择节点
+- [机场退款政策对比](https://jichangduo.com/articles/refund-policy-comparison.html)：了解退款条件、时效和申请流程
+- [机场隐私保护完整指南](https://jichangduo.com/articles/privacy-protection-guide.html)：从日志政策到技术防护的全面隐私保护
+- [机场新手常见错误避坑指南](https://jichangduo.com/articles/beginner-mistakes-to-avoid.html)：选购、配置、使用各阶段的常见错误
 
 ## 目录数据摘要（资料快照 2026-10）
 
