@@ -14,7 +14,7 @@
 ## 主要页面
 
 - [首页与机场目录](https://jichangduo.com/)：14 个条目，含起步价、线路描述、参考评分、场景标签。
-- [排行榜](https://jichangduo.com/rankings.html)：资料名次 #1–#14 与优先核对项。
+- [机场大全](https://jichangduo.com/all-airports.html)：查看全部机场服务的价格、线路、参考评分，并按需求筛选和排序。
 - [横向对比](https://jichangduo.com/compare.html)：起步价 / 线路 / 速度记录 / 参考分并排。
 - [常见问题](https://jichangduo.com/faq.html)：8 个问答，含 FAQPage 结构化数据。
 - [选购与使用指南](https://jichangduo.com/guides.html)：月成本、流量倍率、退款、隐私。
